@@ -1,0 +1,17 @@
+<button *ngIf="!showFiller" type="button" mat-button (click)="drawer.toggle(); showFiller = !showFiller">
+  |||
+</button>
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <button *ngIf="showFiller" type="button" mat-button (click)="drawer.toggle(); showFiller = !showFiller">
+      |||
+    </button>
+    <p>Auto-resizing sidenav</p>
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-drawer-container>

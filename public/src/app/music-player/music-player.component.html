@@ -1,0 +1,10 @@
+<div class="playerWrapper">
+  <h1>StreamShare</h1>
+  <h2><code>Connect your device in your Spotify App Devices to play!</code></h2>
+
+  <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
+  <button (click)="toggleMic()" class="microphone" mat-raised-button [color]="micToggle ? 'primary' : 'warn'">Turn Microphone {{micToggle ? 'On' : 'Off'}}</button>
+
+
+  <router-outlet></router-outlet>
+</div>
