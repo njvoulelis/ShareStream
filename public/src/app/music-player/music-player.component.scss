@@ -1,10 +1,13 @@
 .playerWrapper{
+  height: 100%;
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: end;
   padding: 0% 10%;
+  background-image: linear-gradient(to bottom, white, black);
 }
 .microphone{
   display: flex;
   flex-flow: row;
 }
+

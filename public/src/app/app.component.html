@@ -1,16 +1,22 @@
-<button *ngIf="!showFiller" type="button" mat-button (click)="drawer.toggle(); showFiller = !showFiller">
+<button class="sideNavOpenButton" *ngIf="!showFiller" type="button" mat-button
+  (click)="drawer.toggle(); showFiller = !showFiller">
   |||
 </button>
-<mat-drawer-container class="example-container">
-  <mat-drawer #drawer class="example-sidenav" mode="side">
+<mat-drawer-container class="nav-container">
+  <mat-drawer #drawer class="sidenav" mode="side">
     <button *ngIf="showFiller" type="button" mat-button (click)="drawer.toggle(); showFiller = !showFiller">
       |||
     </button>
-    <p>Auto-resizing sidenav</p>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <h3>Spotify Playlists</h3>
+    <ul>
+      <li><button mat-button color='primary'>Running</button></li>
+      <li><button mat-button color color='primary'>Party</button></li>
+      <li><button mat-button color color='primary'>Relaxing Music</button></li>
+    </ul>
+    <button mat-raised-button color='accent'>Add new +</button>
   </mat-drawer>
 
-  <div class="example-sidenav-content">
+  <div class="main-content">
     <router-outlet></router-outlet>
   </div>
 

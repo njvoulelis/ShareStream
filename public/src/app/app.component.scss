@@ -1,14 +1,28 @@
-.example-container {
-}
-
-.example-sidenav-content {
-  display: flex;
+.nav-container{
   height: 100%;
-  align-items: center;
+}
+.main-content {
+  display: flex-end;
+  height: 100%;
+  // align-items: center;
   justify-content: center;
+  background-image: linear-gradient(to bottom, white, black);
 }
 
-.example-sidenav {
-  padding: 10px;
+.sidenav {
+  padding: 0px 10px 10px;
+  width: 75%;
+  // border-right: 4px solid green;
+  background-image: linear-gradient(to bottom, white, black);
+  z-index: 9;
+  position: absolute;
 }
 
+button{
+  text-align: left;
+  padding: 0px 8px;
+}
+
+.sideNavOpenButton{
+  margin-left: 10px;
+}

@@ -11,7 +11,7 @@ const routes: Routes = [
   {
     path: 'player', component: MusicPlayerComponent
   },
-  { path: '', pathMatch: 'full', redirectTo: '/restaurants' },
+  { path: '', pathMatch: 'full', redirectTo: '/login' },
 
 ];
 

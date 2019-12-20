@@ -9,7 +9,7 @@ import { StreamService } from '../stream.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(    private streamService: StreamService,
+  constructor(private streamService: StreamService,
     ) { }
 
   ngOnInit() {

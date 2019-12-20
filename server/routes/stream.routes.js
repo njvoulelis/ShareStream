@@ -1,7 +1,8 @@
-const StreamController = require('../controllers/stream.controller')
-
+const StreamController = require('../controllers/stream.controller');
+// const PlayerController = require('../../public/src/player');
 module.exports = app => {
     app.get('/api/stream', StreamController.getMain);
+    // app.get('/api/token', PlayerController.)
     // app.get('/login', function(req, res) {
     //     var scopes = 'user-read-private user-read-email';
     //     res.redirect('https://accounts.spotify.com/authorize' +
